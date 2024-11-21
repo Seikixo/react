@@ -9,7 +9,7 @@ function Food(){
     const orange = "Orange";
 
     return(
-        <ul>
+        <ul className={style.fruitscontainer}>
             <li className={style.fruits}><img src={bananaImg} alt="" className={style.icon}/>Banana</li>
             <li className={style.fruits}><img src={appleImg} alt="" className={style.icon} />{apple}</li>
             <li className={style.fruits}><img src={orangeImg} alt="" className={style.icon} />{orange.toUpperCase()}</li>

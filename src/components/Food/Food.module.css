@@ -1,6 +1,14 @@
+.fruitscontainer{
+    display: flex;
+    gap: 20px;
+}
 .fruits{
     display: flex;
-    gap: 10px;
+    border: solid;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 30px;
 }
 .icon{
     position: relative;
