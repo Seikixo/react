@@ -9,7 +9,7 @@ function App() {
   
   return(
     <>
-      <Header />
+      <Header company="Foods" year={2020}/>
       <Card />
       <Footer />
       <Input />

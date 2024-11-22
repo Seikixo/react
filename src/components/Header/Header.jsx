@@ -1,9 +1,9 @@
 
-function Header(){
+function Header(props){
 
     return(
         <header>
-            <h1>My website</h1>
+            <h1>Hall of {props.company} {props.year}</h1>
 
             <nav>
                 <ul>
