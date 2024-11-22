@@ -9,7 +9,7 @@ function Card(){
             <div className="card">
                 <p>Pick one fruit</p>
             </div>
-            <Food/>
+            <Food isAvailable={true} isNotAvailable={false}/>
         </>
 
     );
