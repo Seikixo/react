@@ -1,4 +1,7 @@
 import Food from "../Food/Food";
+import bananaImg from '../../assets/banana.png';
+import appleImg from '../../assets/apple.png';
+import orangeImg from '../../assets/orange.png'
 
 function Card(){
 
@@ -9,7 +12,10 @@ function Card(){
             <div className="card">
                 <p>Pick one fruit</p>
             </div>
-            <Food isAvailable={true} isNotAvailable={false}/>
+            <Food fruitImg={bananaImg} fruit="Banana" isAvailable={true}/>
+            <Food fruitImg={appleImg} fruit="Apple" isAvailable={true}/>
+            <Food fruitImg={orangeImg} fruit="Orange" isAvailable={false}/>
+            <Food/>
         </>
 
     );
