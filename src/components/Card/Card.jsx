@@ -2,6 +2,7 @@ import Food from "../Food/Food";
 import bananaImg from '../../assets/banana.png';
 import appleImg from '../../assets/apple.png';
 import orangeImg from '../../assets/orange.png'
+import Drinks from '../Drinks/Drinks.jsx'
 
 function Card(){
 
@@ -16,6 +17,8 @@ function Card(){
             <Food fruitImg={appleImg} fruit="Apple" isAvailable={true}/>
             <Food fruitImg={orangeImg} fruit="Orange" isAvailable={false}/>
             <Food/>
+            <Drinks />
+            
         </>
 
     );
