@@ -1,9 +1,11 @@
 
 function Button(){
 
+    const handleClick = () => console.log("Yikes")
+
     //applying external style sheet to apply global style
     return(
-        <button className="button">Click Me</button>
+        <button onClick={handleClick} className="button">Click Me </button>
     );
 }
 
