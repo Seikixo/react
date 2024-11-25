@@ -1,11 +1,13 @@
 
 function Button(){
 
-    const handleClick = () => console.log("Yikes")
+    const handleClick1 = () => console.log("Yikes")
+
+    const handleClick2 = (name) => console.log(`${name} please stop`)
 
     //applying external style sheet to apply global style
     return(
-        <button onClick={handleClick} className="button">Click Me </button>
+        <button onClick={() => handleClick2("Seikizo")} className="button">Click Me </button>
     );
 }
 
