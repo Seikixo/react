@@ -6,6 +6,7 @@ import Button from './components/Button/Button.jsx'
 import Input from './components/Input/Input.jsx'
 import Status from './components/Status/Status.jsx'
 import Category from './components/Category/Category.jsx'
+import Order from './components/Order/Order.jsx'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
       <Footer />
       <Input />
       <Button />
+      <Order />
     </>
 
   );
