@@ -1,10 +1,11 @@
 
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 function Order(){
 
     const [order, setOrder] = useState("None");
     const [pieces, setPieces] = useState(0);
+    const [color, setColor] = useState("green");
     const [submit, setSubmit] = useState(false);
     const [payment, setPayment] = useState();
 
@@ -12,9 +13,20 @@ function Order(){
         setOrder("apple");
     }
 
-    const updatePieces = () => {
-        const addPieces = pieces +1;
-        setPieces(addPieces);
+    useEffect(() => {
+        document.title = `Pieces: ${pieces}, ${color}`
+    }, [pieces, color]);
+
+    function updateColor(){
+        setColor(c => c === "green" ? "red" : "green");
+    }
+
+    function addPieces(){
+        setPieces(p => p + 1);
+    }
+
+    function subtractPieces(){
+        setPieces(p => p - 1);
     }
 
     const updateSubmit = () => {
@@ -30,8 +42,10 @@ function Order(){
             <p>Name: {order}</p>
             <button onClick={updateOrder}>Set Order</button>
 
-            <p>Pieces: {pieces}</p>
-            <button onClick={updatePieces}>Add Pieces</button>
+            <p style={{color: color}}>Pieces: {pieces}</p>
+            <button onClick={addPieces}>Add Pieces</button>
+            <button onClick={subtractPieces}>Subtract Pieces</button>
+            <button onClick={updateColor}>Update Color</button>
 
             <p>Payment Type: {payment}</p>
             <select value={payment} onChange={handlePayment}>
