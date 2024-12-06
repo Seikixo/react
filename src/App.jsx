@@ -7,6 +7,7 @@ import Input from './components/Input/Input.jsx'
 import Status from './components/Status/Status.jsx'
 import Category from './components/Category/Category.jsx'
 import Order from './components/Order/Order.jsx'
+import Feedback from './components/Feedback/Feedback.jsx'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
       <Input />
       <Button />
       <Order />
+      <Feedback />
     </>
 
   );
