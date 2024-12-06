@@ -4,7 +4,7 @@ function Good(){
 
     return(
         <>
-        <Bad/>
+            <Bad/>
         </>
     );
 }

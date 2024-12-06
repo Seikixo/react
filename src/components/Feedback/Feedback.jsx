@@ -10,7 +10,7 @@ function Feedback(){
         <>
         <p>Feedback: {feedback}</p>
         <FeedbackContext.Provider value={feedback}>
-            <Good feed={feedback}/>
+            <Good/>
         </FeedbackContext.Provider>
         </>
     );

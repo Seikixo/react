@@ -8,7 +8,7 @@ function Bad(){
     const feed = useContext(FeedbackContext);
     return(
         <>
-        <p>{feed} Quality</p>
+            <p>{feed} Quality</p>
         </>
     )
 }
